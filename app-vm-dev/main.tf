@@ -9,9 +9,9 @@ provider "vsphere" {
 locals {
   datacenter_name      = "Datacenter"
   cluster_name         = "East"
-  datastore_name       = "<DATASTORE_NAME>"
+  datastore_name       = "380SSDDatastore2"
   network_name         = "VM Network"
-  virtual_machine_name = "<VM_NAME>"
+  virtual_machine_name = "SCC-RPT"
 }
 
 data "vsphere_datacenter" "dc" {
